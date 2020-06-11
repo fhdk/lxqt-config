@@ -3,3 +3,4 @@
 Name=Default
 Comment=Default cursor theme
 Inherits=xcursor-breeze
+Size=18
