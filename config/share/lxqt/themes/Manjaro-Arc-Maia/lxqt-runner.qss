@@ -35,8 +35,6 @@ QToolButton::menu-indicator {
    margin: 2px;
 }
 
-
-
 /*
  * Search results (For some reason the #commandList does no take the styles, just the background and the border can be changed)
  */
@@ -60,6 +58,3 @@ QListView {
 
  QListView::item:hover {
  }
-
-
-

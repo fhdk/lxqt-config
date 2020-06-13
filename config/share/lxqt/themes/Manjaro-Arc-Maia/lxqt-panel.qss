@@ -9,7 +9,7 @@ QToolTip {
     border: 1px solid rgb(39, 44, 53);
     background:rgb(64, 69, 82);
     padding: 2px;
-    margin: 0px;
+    margin: 2px;
     color: #D2D8E0
 }
 
@@ -35,7 +35,7 @@ Plugin > QWidget > QToolButton > QWidget > QToolButton,
 LXQtPanelPlugin > QToolButton {
     margin: 0;
     border: 1px solid transparent;
-    qproperty-iconSize: 24px;
+    qproperty-iconSize: 32px;
     color: #D2D8E0;
 }
 
@@ -58,16 +58,20 @@ LXQtPanelPlugin > QToolButton:pressed {
 
 VolumePopup {
     background: rgb(56, 60, 74);
-    margin: 2px;
+    margin: 0;
+    min-width: 60px;
+    border: 1px solid rgb(39, 44, 53);
 }
 
 VolumePopup  > QPushButton {
+    min-height: 24px;
+    min-width: 40px;
     color: #D2D8E0;
     background: #444a58;
     padding: 2px 10px;
     margin: 2px;
     border-radius: 2px;
-    qproperty-iconSize: 24px;
+    qproperty-iconSize: 32px;
 }
 
 VolumePopup  > QPushButton:hover {
@@ -92,7 +96,7 @@ VolumePopup  > QSlider::handle:vertical {
  }
 
 VolumePopup  > QSlider::add-page:vertical {
-    background: rgb(82, 148, 226);
+    background: rgb(22, 160, 133);
     border-radius: 3px;
 
  }
@@ -109,10 +113,11 @@ VolumePopup  > QSlider::sub-page:vertical {
 
 #DesktopSwitch QToolButton {
     margin: 2px;
+    padding: 2px;
 }
 
 #DesktopSwitch QToolButton:on {
-    background: rgb(56, 60, 74);
+    background: rgb(22, 160, 133);
     border: 1px solid rgb(39, 44, 53);
     font: bold;
 }
@@ -139,8 +144,8 @@ VolumePopup  > QSlider::sub-page:vertical {
 }
 
 #QuickLaunch QToolButton{
-    border: 0px;
-    margin: 1px;
+    border: 0;
+    margin: 0;
     padding: 2px;
 }
 
@@ -162,16 +167,15 @@ VolumePopup  > QSlider::sub-page:vertical {
     padding: 2px;
 }
 
-#TaskBar QToolButton:on{
-    /*border: 1px solid rgb(57, 61, 75);*/
-    border-bottom: 2px solid rgb(82, 148, 226);
+#TaskBar QToolButton:on {
     background: rgb(39, 44, 53);
+    border-bottom: 2px solid rgb(22, 160, 133);
 }
 
-#TaskBar QToolButton:hover{
-   /*border: 1px solid rgb(39, 44, 53);*/
-   border-bottom: 2px solid rgb(79, 86, 101);
-   background: rgb(79, 86, 101);
+#TaskBar QToolButton:hover {
+   background: rgb(22, 160, 133, 70%);
+   border-bottom: 2px solid rgb(22, 160, 133);
+   
 }
 
 #TaskBar QToolButton:pressed {
@@ -189,7 +193,8 @@ VolumePopup  > QSlider::sub-page:vertical {
 }
 
 #TaskBar LXQtGroupPopup QToolButton{
-    margin: 1px;
+    margin: 0;
+    padding: 2px;
 }
 
 /*
@@ -198,18 +203,19 @@ VolumePopup  > QSlider::sub-page:vertical {
 
 QCalendarWidget #qt_calendar_navigationbar,
 QCalendarWidget #qt_calendar_navigationbar * {
-    background-color:rgb(64, 69, 82);
+    /*background-color:rgb(64, 69, 82);*/
+    background-color: rgb(53, 57, 69);
     color: #D2D8E0;
 }
 QCalendarWidget #qt_calendar_monthbutton {
     padding:2px;
     margin: 2px;
 }
-QCalendarWidget #qt_calendar_monthbutton:hover,
+/*QCalendarWidget #qt_calendar_monthbutton:hover,*/
 QCalendarWidget #qt_calendar_prevmouth:hover,
 QCalendarWidget #qt_calendar_nextmouth:hover {
    border: 1px solid rgb(39, 44, 53);
-   background: rgb(79, 86, 101);
+   background: rgb(22, 160, 133);
 }
 QCalendarWidget #qt_calendar_monthbutton::menu-indicator {
    image: none;
@@ -220,18 +226,19 @@ QCalendarWidget QTableView {
     selection-background-color:#16A085;
 }
 QCalendarWidget #qt_calendar_nextmonth {
-    max-height:20px;
-    min-height:20px;
+    max-height:30px;
+    min-height:30px;
     qproperty-icon: url(calendar-popup/arrow-right.svg);
 }
 QCalendarWidget #qt_calendar_prevmonth {
-    max-height:20px;
-    min-height:20px;
+    max-height:30px;
+    min-height:30px;
     qproperty-icon: url(calendar-popup/arrow-left.svg);
 }
 
 QCalendarWidget QMenu {
-    margin: 4px;
+    padding: 10px;
+    min-width: 100px;
     background-color: rgb(56, 60, 74);
 }
 QCalendarWidget QMenu::item:selected {
@@ -240,7 +247,8 @@ QCalendarWidget QMenu::item:selected {
 }
 
 QCalendarWidget QWidget {
-    alternate-background-color: rgb(64, 69, 82);
+    /*alternate-background-color: rgb(64, 69, 82);*/
+    alternate-background-color: rgb(39, 44, 53);
 }
 
 QCalendarWidget QAbstractItemView:enabled {
@@ -252,7 +260,7 @@ QCalendarWidget QAbstractItemView:disabled {
 }
 
 QCalendarWidget {
-    border: 1px solid rgb(43, 46, 57);
+    border: 1px solid rgb(39, 44, 53);
 }
 
 /*
@@ -278,9 +286,6 @@ QCalendarWidget {
 }
 
 
-
-
-
 /*
  * Tray
  */
@@ -297,7 +302,7 @@ TrayIcon {
 
 
 /*
- * Main menu
+ * Main menu launcher
  */
 
 #MainMenu {
@@ -310,15 +315,19 @@ TrayIcon {
 }
 #MainMenu:hover {
     border: 1px solid rgb(39, 44, 53);
-    background: rgb(79, 86, 101);
+    /*background: rgb(79, 86, 101);*/
 }
 
 #MainMenu:pressed {
     padding: 4px;
 }
 
+/*
+ * Main menu
+ */
 #MainMenu  QMenu {
-    margin: 0px;
+    margin: 1px;
+    padding: 5px;
     background-color: rgb(56, 60, 74);
 }
 #MainMenu  QMenu::icon {
@@ -330,14 +339,13 @@ TrayIcon {
 }
 
 #MainMenu QMenu::item {
-    color: #D2D8E0;
+    color: #FFFFFF;
 }
 
 #MainMenu QMenu::item:selected {
     color: #FFFFFF;
     background: #16A085;
 }
-
 
 #MainMenu QLineEdit {
     background: rgb(64, 69, 82);
@@ -348,7 +356,6 @@ TrayIcon {
     margin-left: 2px;
     color: #D2D8E0;
 }
-
 
 #MainMenu ActionView {
     border: none;
@@ -361,9 +368,15 @@ TrayIcon {
     padding: 3px 0;
 }
 
-#MainMenu ActionView::item:selected, ActionView::item:hover {
+#MainMenu ActionView::item:hover {
     border: 1px solid rgb(39, 44, 53);
     background: rgb(79, 86, 101);
+    color: #D2D8E0;
+}
+
+#MainMenu ActionView::item:selected {
+    border: 1px solid rgb(39, 44, 53);
+    background: rgb(22, 160, 133;
     color: #D2D8E0;
 }
 
@@ -377,6 +390,7 @@ TrayIcon {
 #LXQtMountPopup {
     background-color: rgb(56, 60, 74);
     padding: 3px;
+    border: 1px solid rgb(39, 44, 53);
 }
 
 #LXQtMountPopup > MenuDiskItem {
@@ -385,16 +399,17 @@ TrayIcon {
 
 #LXQtMountPopup > MenuDiskItem:hover {
     border: 1px solid rgb(39, 44, 53);
-    background: rgb(79, 86, 101);
+    background: rgb(22, 160, 133);
 }
 
 #LXQtMountPopup #EjectButton,
 #LXQtMountPopup #DiskButton {
-    qproperty-iconSize: 22px;
+    qproperty-iconSize: 32px;
     background-color: transparent;
     border: none;
     color: #D2D8E0;
     padding: 4px;
+    margin-left: 4px;
 }
 
 #LXQtMountPopup #NoDiskLabel {
@@ -442,9 +457,8 @@ TrayIcon {
 }
 
 #KbIndicator > QLabel:enabled {
-    background: #383C4A;
+    background: #16A085;
 }
-
 
 /*
  * SysStat
