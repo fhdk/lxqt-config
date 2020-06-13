@@ -92,7 +92,7 @@ VolumePopup  > QSlider::handle:vertical {
  }
 
 VolumePopup  > QSlider::add-page:vertical {
-    background: rgb(22, 160, 133);
+    background: rgb(82, 148, 226);
     border-radius: 3px;
 
  }
@@ -119,7 +119,7 @@ VolumePopup  > QSlider::sub-page:vertical {
 
 #DesktopSwitch QToolButton:hover {
     border: 1px solid rgb(39, 44, 53);
-    background: rgb(22, 160, 133);
+    background: rgb(79, 86, 101);
 }
 
 #DesktopSwitch QToolButton:pressed {
@@ -146,7 +146,7 @@ VolumePopup  > QSlider::sub-page:vertical {
 
 #QuickLaunch QToolButton:hover{
     border: 1px rgb(39, 44, 53);
-    background: rgb(22, 160, 133);
+    background: rgb(79, 86, 101);
 }
 
 #QuickLaunch QToolButton:pressed {
@@ -164,14 +164,14 @@ VolumePopup  > QSlider::sub-page:vertical {
 
 #TaskBar QToolButton:on{
     /*border: 1px solid rgb(57, 61, 75);*/
-    border-bottom: 2px solid rgb(22, 160, 133);
+    border-bottom: 2px solid rgb(82, 148, 226);
     background: rgb(39, 44, 53);
 }
 
 #TaskBar QToolButton:hover{
    /*border: 1px solid rgb(39, 44, 53);*/
-   border-bottom: 2px solid rgb(22, 160, 133);
-   background: rgb(22, 160, 133);
+   border-bottom: 2px solid rgb(79, 86, 101);
+   background: rgb(79, 86, 101);
 }
 
 #TaskBar QToolButton:pressed {
@@ -205,11 +205,11 @@ QCalendarWidget #qt_calendar_monthbutton {
     padding:2px;
     margin: 2px;
 }
-/*QCalendarWidget #qt_calendar_monthbutton:hover,*/
+QCalendarWidget #qt_calendar_monthbutton:hover,
 QCalendarWidget #qt_calendar_prevmouth:hover,
 QCalendarWidget #qt_calendar_nextmouth:hover {
    border: 1px solid rgb(39, 44, 53);
-   background: rgb(22, 160, 133);
+   background: rgb(79, 86, 101);
 }
 QCalendarWidget #qt_calendar_monthbutton::menu-indicator {
    image: none;
@@ -260,7 +260,7 @@ QCalendarWidget {
  */
 #Clock:hover {
    border: 1px solid rgb(39, 44, 53);
-   background: rgb(22, 160, 133);
+   background: rgb(79, 86, 101);
 }
 
 #Clock > QWidget{
@@ -310,7 +310,7 @@ TrayIcon {
 }
 #MainMenu:hover {
     border: 1px solid rgb(39, 44, 53);
-    background: rgb(22, 160, 133);
+    background: rgb(79, 86, 101);
 }
 
 #MainMenu:pressed {
@@ -363,7 +363,7 @@ TrayIcon {
 
 #MainMenu ActionView::item:selected, ActionView::item:hover {
     border: 1px solid rgb(39, 44, 53);
-    background: rgb(22, 160, 133);
+    background: rgb(79, 86, 101);
     color: #D2D8E0;
 }
 
@@ -385,7 +385,7 @@ TrayIcon {
 
 #LXQtMountPopup > MenuDiskItem:hover {
     border: 1px solid rgb(39, 44, 53);
-    background: rgb(22, 160, 133);
+    background: rgb(79, 86, 101);
 }
 
 #LXQtMountPopup #EjectButton,
@@ -427,7 +427,7 @@ TrayIcon {
  */
 #ShowDesktop > QToolButton:hover {
     border: 1px solid rgb(39, 44, 53);
-    background: rgb(22, 160, 133);
+    background: rgb(79, 86, 101);
 }
 
 /*
@@ -442,7 +442,7 @@ TrayIcon {
 }
 
 #KbIndicator > QLabel:enabled {
-    background: #16A085;
+    background: #383C4A;
 }
 
 
