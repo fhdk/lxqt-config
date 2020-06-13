@@ -302,8 +302,8 @@ TrayIcon {
 #MainMenu {
     margin: 0;
     padding: 0;
-    border: 0 solid rgb(255,255,255);
-    background: rgb(47,47,47);
+    border: 0px solid rgba(0, 0, 0, 30%);
+    background: rgba(0, 0, 0, 0%);
     qproperty-icon: url(mainmenu.png);
     color: #FFFFFF;
 }
